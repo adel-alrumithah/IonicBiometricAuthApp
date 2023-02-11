@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FingerprintAIO } from '@ionic-native/fingerprint-aio/ngx';
 
 import { LoginPageModule } from './login/login.module';
+import { SplashScreen } from '@ionic-native/splash-screen';
 
 
 @NgModule({
@@ -17,9 +18,12 @@ import { LoginPageModule } from './login/login.module';
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    LoginPageModule],
+    LoginPageModule
+  ],
   providers: [
     FingerprintAIO,
+    StatusBar,
+    SplashScreen,
     {
       provide: RouteReuseStrategy, useClass: IonicRouteStrategy
     }],

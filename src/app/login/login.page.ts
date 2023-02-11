@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { FingerprintAIO } from '@ionic-native/fingerprint-aio/ngx';
+import { FingerprintAIO } from '@ionic-native/fingerprint-aio';
+
 import { AlertController, ModalController } from '@ionic/angular';
 
 @Component({
@@ -37,7 +38,7 @@ export class LoginPage implements OnInit {
               console.log(result);
               if (result == "Success") {
                 //Fingerprint/Face was successfully verified            
-                //Go to dashboard
+                //Go to home page
                 if (this.isModal) {
                   this.modelCtrl.dismiss();
                 } else {

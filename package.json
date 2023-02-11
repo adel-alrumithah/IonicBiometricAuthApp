@@ -45,6 +45,8 @@
     "@typescript-eslint/eslint-plugin": "5.3.0",
     "@typescript-eslint/parser": "5.3.0",
     "cordova-plugin-fingerprint-aio": "^5.0.1",
+    "cordova-plugin-splashscreen": "^5.0.2",
+    "cordova-plugin-statusbar": "^2.4.2",
     "eslint": "^7.6.0",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsdoc": "30.7.6",
@@ -65,7 +67,9 @@
     "plugins": {
       "cordova-plugin-fingerprint-aio": {
         "FACE_USAGE_DESCRIPTION": "we want to authenticate your app"
-      }
+      },
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-splashscreen": {}
     }
   }
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { ModalController, Platform } from '@ionic/angular';
 import { LoginPage } from './login/login.page';
 
@@ -9,14 +10,14 @@ import { LoginPage } from './login/login.page';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor(private platform: Platform, private modalCtrl: ModalController, private router: Router) {
+  constructor(private platform: Platform, private modalCtrl: ModalController, private router: Router,private statusBar:StatusBar,private splashScreen:SplashScreen) {
     this.initializeApp();
   }
   
   initializeApp() {
     this.platform.ready().then(() => {
-      //hide spalshscreen
-      //setr statusbase style
+      this.statusBar.styleDefault();
+      this.splashScreen.hide();
 
       //you can use pause or resume events
       this.platform.pause.subscribe(() => {

@@ -13,7 +13,7 @@ export class HomePage {
 
     setTimeout(() => {
       this.lockApp();
-    }, 2000);
+    }, 10000);
   }
 
   async lockApp(){

@@ -17,3 +17,7 @@ import {FingerprintAIOOriginal} from '@ionic-native/fingerprint-aio/ngx'
 https://www.youtube.com/watch?v=SBz2MLaJ3Ls
 
 https://ionicframework.com/docs/v3/native/fingerprint-aio/
+
+
+ionic cordova plugin add cordova-plugin-splashscreen
+ionic cordova plugin add cordova-plugin-statusbar
